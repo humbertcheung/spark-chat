@@ -1,0 +1,46 @@
+<!--
+ * @Description: 聊天页面
+ * @Version: 1.0
+ * @Author: Humbert Cheung
+ * @Date: 2022-06-25 14:15:14
+ * @LastEditors: [Humbert Cheung]
+ * @LastEditTime: 2023-07-01 16:03:41
+ * @FilePath: /spark-chat/web/views/notice/notice.html
+ * Copyright (C) 2022 syzhang. All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="chat.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header" style="text-align: center">
+        <img
+          class="header-icon"
+          src="/static/robot.png"
+          width="50px"
+          height="50px"
+        />
+      </div>
+      <div class="content"></div>
+      <div class="input-area">
+        <textarea
+          name="text"
+          id="textarea"
+          placeholder="Send a message"
+        ></textarea>
+        <div class="button-area">
+          <button id="send-btn" onclick="send()">发 送</button>
+        </div>
+      </div>
+    </div>
+    <script src="chat.js"></script>
+  </body>
+</html>
